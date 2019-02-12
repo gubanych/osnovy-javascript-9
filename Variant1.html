@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Вариант 1</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function(){console.log('ooo')
+            $('#hideButton').click(function(){
+                $('li.MsoNormal:even').hide();
+            });
+            $('#showButton').click(function(){
+                $('li.MsoNormal:even').show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="hideButton">скрыть</button>
+    <button id="showButton">показать</button>
+    <ul>
+        <li class="MsoNormal">Первый элемент</li>
+        <li class="MsoNormal">Второй элемент</li>
+        <li class="MsoNormal">Третий элемент</li>
+        <li class="MsoNormal">Четвертый элемент</li>
+        <li class="MsoNormal">Пятый элемент</li>
+        <li>Шестой элемент</li>
+        <li>Седьмой элемент</li>
+        <li>Восьмой элемент</li>
+        <li>Девятый элемент</li>
+        <li>Десятый элемент</li>
+    </ul>
+</body>
+</html>
